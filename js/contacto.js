@@ -4,7 +4,8 @@ const estado = document.getElementById("estado-formulario");
 // Endpoint de tu propio servidor backend
 const URL_SERVIDOR = "http://localhost:3000/api/contacto";
 
-formulario.addEventListener("submit", async function (evento) {
+if (formulario && estado) {
+  formulario.addEventListener("submit", async function (evento) {
   evento.preventDefault();
 
   const nombre = document.getElementById("nombre").value.trim();
@@ -27,7 +28,8 @@ formulario.addEventListener("submit", async function (evento) {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({ nombre, correo, asunto, mensaje }),
-    });
+      });
+    }
 
     const datos = await respuesta.json();
 
