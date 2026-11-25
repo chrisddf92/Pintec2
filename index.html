@@ -4,121 +4,153 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ChristianDevWeb</title>
+    <!-- Cuando aprendas CSS, aquí enlazarás tu hoja de estilos:
+    <link rel="stylesheet" href="css/style.css" />
+    -->
   </head>
-  <!-- Pendiente Style con Css -->
+
   <body>
-    <div class="shell">
-      <header>
-        <div class="brand">
-          <h1>Mi Portafolio</h1>
-          <span>ChristianDev</span>
+    <!-- Encabezado de la página: título y menú principal -->
+    <header>
+      <div>
+        <h1>Mi Portafolio</h1>
+        <p>ChristianDev</p>
+      </div>
+
+      <!-- Menú de navegación actualizado -->
+      <nav>
+        <ul>
+          <li><a href="paginas/inicio.html">Inicio</a></li>
+          <li><a href="paginas/proyectos.html">Proyectos</a></li>
+          <li><a href="paginas/info.html">Información</a></li>
+          <li><a href="paginas/contact.html">Contacto</a></li>
+          <li><a href="paginas/nosotros.html">Nosotros</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <hr />
+
+    <!-- Contenido principal -->
+    <main>
+      <!-- Sección de presentación (Hero) -->
+      <section id="inicio">
+        <p><strong>Bienvenido</strong></p>
+        <h2>Diseño moderno con un toque personal.</h2>
+        <p>
+          Creo experiencias digitales funcionales, limpias y memorables. Aquí
+          combino creatividad, organización y tecnología para ofrecer soluciones
+          que se sienten naturales y profesionales.
+        </p>
+
+        <p>
+          <a href="paginas/proyectos.html">Ver proyectos destacados</a> |
+          <a href="paginas/contact.html">Escríbeme</a>
+        </p>
+
+        <div>
+          <img src="img/foto1.jpeg" alt="Foto de perfil" width="300" />
+          <p>
+            <strong>+5 años</strong><br />
+            <span>de experiencia</span>
+          </p>
         </div>
+      </section>
 
-        <!-- Botones de Navegación de mi Web -->
+      <hr />
 
-        <nav>
+      <!-- Sección de tecnologías y enfoque -->
+      <section>
+        <article>
+          <h3>Tecnologías que uso</h3>
+          <p>
+            En mi día a día trabajo con herramientas que me permiten crear,
+            prototipar y desplegar soluciones modernas con buena experiencia de
+            usuario.
+          </p>
           <ul>
-            <li><a href="#inicio">Inicio</a></li>
-            <!-- pagina/horario.html sin # para ir directamente a la pagina de horario -->
-            <li><a href="paginas/horario.html">Horario</a></li>
-            <!-- # para ir a información desplazando en la misma pagina -->
-            <li><a href="#informacion">Información</a></li>
-            <li><a href="paginas/proyectos.html">Proyectos</a></li>
-            <li><a href="paginas/nosotros.html">Nosotros</a></li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Git</li>
+            <li>Github</li>
+            <li>VS Code</li>
+            <li>Android Studio</li>
+            <li>PhpMyAdmin</li>
+            <li>Node.js</li>
+            <li>Kotlin</li>
+            <li>Python</li>
+            <li>ClaudeCode</li>
           </ul>
-        </nav>
-      </header>
+        </article>
 
-      <main>
-        <section id="inicio" class="hero">
-          <div class="hero-copy">
-            <span class="eyebrow">Bienvenido</span>
-            <h2>Diseño moderno con un toque personal.</h2>
-            <p>
-              Creo experiencias digitales funcionales, limpias y memorables.
-              Aquí combino creatividad, organización y tecnología para ofrecer
-              soluciones que se sienten naturales y profesionales.
-            </p>
+        <article>
+          <h3>¿Qué hago?</h3>
+          <p>
+            Diseñamos experiencias digitales enfocadas en claridad visual, buen
+            rendimiento y una navegación intuitiva para cada usuario.
+          </p>
+          <ul>
+            <li>Aplicaciones Web</li>
+            <li>Aplicaciones Móviles</li>
+            <li>Diseño de Experiencia de Usuario</li>
+            <li>Backend Development</li>
+            <li>Desarrollo Web Full Stack</li>
+          </ul>
+        </article>
+      </section>
 
-            <div class="hero-actions">
-              <a class="btn btn-primary" href="paginas/horario.html"
-                >Ver horario</a
-              >
-              <a class="btn btn-secondary" href="paginas/proyectos.html"
-                >Ver proyectos</a
-              >
-            </div>
-          </div>
+      <hr />
 
-          <div class="hero-visual">
-            <div class="profile-wrap">
-              <img src="img/foto1.jpeg" alt="Foto de perfil" />
-            </div>
-            <div class="stats">
-              <strong>+5 años</strong>
-              <span>de experiencia</span>
-            </div>
-          </div>
-        </section>
+      <!-- Nueva sección: Proyectos Destacados -->
+      <section id="proyectos">
+        <h3>Proyectos Destacados</h3>
+        <p>Una muestra de trabajos y prototipos que he desarrollado.</p>
 
-        <section class="content-grid">
-          <article class="info-card">
-            <h3>Tecnologías que uso</h3>
-            <p>
-              En mi día a día trabajo con herramientas que me permiten crear,
-              prototipar y desplegar soluciones modernas con buena experiencia
-              de usuario.
-            </p>
-            <div class="badge-list">
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>JavaScript</span>
-              <span>Git</span>
-              <span>Github</span>
-              <span>VS Code</span>
-              <span>Android Studio</span>
-              <span>PhpMyAdmin</span>
-              <span>Node.js</span>
-              <span>Kotlin</span>
-              <span>Python</span>
-              <span>ClaudeCode</span>
-            </div>
-          </article>
+        <article>
+          <h4>Portafolio Web Personal</h4>
+          <p>
+            Sitio web diseñado para presentar servicios, proyectos y formas de
+            contacto con una estructura clara y directa.
+          </p>
+          <p><strong>Tecnologías:</strong> HTML, CSS, JavaScript</p>
+          <p>
+            <a href="paginas/proyectos.html">Ver más proyectos</a>
+          </p>
+        </article>
 
-          <article class="info-card">
-            <h3>¿Qué hago?</h3>
-            <p>
-              Diseñamos experiencias digitales enfocadas en claridad visual,
-              buen rendimiento y una navegación intuitiva para cada usuario.
-            </p>
-            <div class="badge-list">
-              <span>UX/UI</span>
-              <span>Branding</span>
-              <span>Desarrollo</span>
-            </div>
-          </article>
-        </section>
+        <article>
+          <h4>Aplicación y Prototipo Digital</h4>
+          <p>
+            Desarrollo enfocado en la organización de datos, interfaz limpia y
+            buena experiencia de navegación para el usuario.
+          </p>
+          <p><strong>Tecnologías:</strong> Node.js, HTML, SQL</p>
+          <p>
+            <a href="paginas/proyectos.html">Ver detalles</a>
+          </p>
+        </article>
+      </section>
 
-        <section class="cta" id="informacion">
-          <div>
-            <h3>Información</h3>
-            <p>
-              Esta es la información general sobre nuestro servicio, pensado
-              para ofrecer una experiencia clara, ordenada y moderna.
-            </p>
-          </div>
-          <div class="controls">
-            <a class="btn btn-primary" href="paginas/nosotros.html">Nosotros</a>
-            <a class="btn btn-secondary" href="paginas/proyectos.html"
-              >Proyectos</a
-            >
-          </div>
-        </section>
-      </main>
+      <hr />
 
-      <footer>
-        <p>© 2026 ChristianDev</p>
-      </footer>
-    </div>
+      <!-- Sección de información general -->
+      <section id="informacion">
+        <h3>Información</h3>
+        <p>
+          Esta es la información general sobre nuestro servicio, pensado para
+          ofrecer una experiencia clara, ordenada y moderna.
+        </p>
+        <p>
+          <a href="paginas/nosotros.html">Nosotros</a> |
+          <a href="paginas/contact.html">Ir a contacto</a>
+        </p>
+      </section>
+    <hr />
+
+    <!-- Pie de página -->
+    <footer>
+      <p>© 2026 ChristianDev</p>
+    </footer>
   </body>
 </html>
